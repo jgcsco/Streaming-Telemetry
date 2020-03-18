@@ -8,7 +8,7 @@
 ![Screenshot](images/ios-xr.png)
 
     Note: The example shows here has two destination for redundancy purpose to avoid data loss. At the collection end, the data needs to be deduped. The sample-interval is in ms unit.
-##### To check the status of destination, sensor-path, following are useful commands
+##### Check the status of destination, sensor-path to ensure destination is active, and sensor-paths are resolved.
 ![Screenshot](images/destination.png)
 ![Screenshot](images/ios-xr2.png)
 
