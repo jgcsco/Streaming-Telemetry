@@ -5,6 +5,7 @@
     3. Subscription - how often does the device push the data out - regularly based on configured interval, or on change
 
 ### 1. IOS-XR
+![Screenshot](images/ios-xr.png)
 
 ### 2. IOS-XE
 
