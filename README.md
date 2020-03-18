@@ -7,6 +7,8 @@
 ### 1. IOS-XR
 ![Screenshot](images/ios-xr.png)
 
+    Note: The example shows here has two destination for redundancy purpose to avoid data loss. At the collection end, the data needs to be deduped. The sample-interval is in ms unit.
+
 ### 2. IOS-XE
 
 ### 3. NX-OS
