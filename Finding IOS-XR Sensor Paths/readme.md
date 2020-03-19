@@ -32,19 +32,13 @@ module: Cisco-IOS-XR-infra-statsd-oper
 ### 3. Advanced NETCONF Explorer 
 This is a graphical explorer for YANG models supported by a NETCONF device or service orchestrator. Features include:
 ```console
-    Retrieving all YANG models supported by a device or orchestrator using the NETCONF monitoring standard.
-    
-    Parsing the YANG models (using ODL yangtools) and outputting a tree with all the nodes, which the user can expand / collapse.
-    
-    Filtering the model tree by module name and searching the names and descriptions of the YANG nodes in it (e.g. “neighbor count” or “bgp” “neighbor count”).
-    
-    Downloading a ZIP-Archive of all YANG-models supported by the device or orchestrator.
-    
-    Showing details and generating metadata for a YANG node, e.g. the description, the (sensor-)path, a subtree-filter (for NETCONF development) etc.
-    
-    GNMI and IOS XR Telemetry support tools to edit sensor groups and show live data using GRPC.
-    
-    Browsing and searching live (operational) data for selected YANG models.
+    - Retrieving all YANG models supported by a device or orchestrator using the NETCONF monitoring standard.
+    - Parsing the YANG models (using ODL yangtools) and outputting a tree with all the nodes, which the user can expand / collapse.
+    - Filtering the model tree by module name and searching the names and descriptions of the YANG nodes in it (e.g. “neighbor count” or “bgp” “neighbor count”).
+    - Downloading a ZIP-Archive of all YANG-models supported by the device or orchestrator.
+    - Showing details and generating metadata for a YANG node, e.g. the description, the (sensor-)path, a subtree-filter (for NETCONF development) etc.
+    - GNMI and IOS XR Telemetry support tools to edit sensor groups and show live data using GRPC.
+    - Browsing and searching live (operational) data for selected YANG models.
 ```
     
 Download [ANX](https://github.com/cisco-ie/anx) code. 
