@@ -52,7 +52,7 @@ Telemetry Data Mapper to map data identifiers from SNMP, gRPC, NETCONF, CLI, etc
 
 ### 5. CLI
 
-This is a manual process and should #####NOT##### run on production devices. The first step is to understand which “show output” you want to stream using Model Driven Telemetry. Let’s say we want to find the right path for RSVP interface output:  
+This is a manual process and SHOULD NOT run on production devices. The first step is to understand which “show output” you want to stream using Model Driven Telemetry. Let’s say we want to find the right path for RSVP interface output:  
 ```console
 RP/0/RP0/CPU0:NCS5501_bottom#sh rsvp interface bundle-ether 26   
 Thu Dec  7 18:27:56.646 PST
@@ -73,6 +73,28 @@ Path:   RootOper.RSVP.InterfaceBrief({'InterfaceName': 'Bundle-Ether26'})
 ```
 
 After you found the corresponding XML schema, go and check the content of it. To do this you need to run “m2mcon” and use “get”:
+
+
+At this step you have your show output, the schema you need and the fields of this schema. You need to find corresponding YANG model. Do this search based on the name (usually, it is clear which model you need), for RSVP you have just a single model: “Cisco-IOS-XR-ip-rsvp-oper.yang”
+
+Use pyang tool to go through the model, try to find the path (section) that contains the same fields. In our case it will be:  
+
+
+
+We can also use the following command to retrieve live data on a device under test for validation:
+```console
+RP/0/RP0/CPU0:CS1#RP/0/RP0/CPU0:CS1#run mdt_exec -s Cisco-IOS-XR-pfi-im-cmd-oper:interfaces/interface-xr/interface/ip-information - c 10000
+
+Tue Oct 23 11:22:13.230 PDT
+Enter any key to exit... 
+Sub_id 200000001, flag 0, len 0 
+Sub_id 200000001, flag 4, len 95685
+--------
+{"node_id_str":"CS1","subscription_id_str":"app_TEST_200000001","encoding_path":"Cisco-IOS-XR-pfi-im-cmd-oper:interfaces/interface-xr/interface","collection_id":96186,"collection_start_time":1540318941158,"msg_timestamp":1540318950436,"data_json":…<snip>…
+```
+All the counters on the screen are in JSON format. To see in a more human-readable format, use any preferred JSON formatter, e.g:
+
+
 
 
 
