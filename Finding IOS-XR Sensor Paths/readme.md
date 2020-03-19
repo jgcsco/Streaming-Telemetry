@@ -52,7 +52,7 @@ Telemetry Data Mapper to map data identifiers from SNMP, gRPC, NETCONF, CLI, etc
 
 ### 5. CLI
 
-This is a manual process. The first step is to understand which “show output” you want to stream using Model Driven Telemetry. Let’s say we want to find the right path for RSVP interface output:  
+This is a manual process and should #####NOT##### run on production devices. The first step is to understand which “show output” you want to stream using Model Driven Telemetry. Let’s say we want to find the right path for RSVP interface output:  
 ```console
 RP/0/RP0/CPU0:NCS5501_bottom#sh rsvp interface bundle-ether 26   
 Thu Dec  7 18:27:56.646 PST
@@ -71,6 +71,8 @@ Thu Dec  7 18:28:25.325 PST
 Action: get
 Path:   RootOper.RSVP.InterfaceBrief({'InterfaceName': 'Bundle-Ether26'})
 ```
+
+After you found the corresponding XML schema, go and check the content of it. To do this you need to run “m2mcon” and use “get”:
 
 
 
