@@ -32,21 +32,20 @@ module: Cisco-IOS-XR-infra-statsd-oper
 ### 3. Advanced NETCONF Explorer 
 This is a graphical explorer for YANG models supported by a NETCONF device or service orchestrator. Features include:
 
-    Retrieving all YANG models supported by a device or orchestrator using the NETCONF monitoring standard.
-    Parsing the YANG models (using ODL yangtools) and outputting a tree with all the nodes, which the user can expand / collapse.
-    Filtering the model tree by module name and searching the names and descriptions of the YANG nodes in it (e.g. “neighbor count” or “bgp” “neighbor count”).
-    Downloading a ZIP-Archive of all YANG-models supported by the device or orchestrator.
-    Showing details and generating metadata for a YANG node, e.g. the description, the (sensor-)path, a subtree-filter (for NETCONF development) etc.
-    GNMI and IOS XR Telemetry support tools to edit sensor groups and show live data using GRPC.
-    Browsing and searching live (operational) data for selected YANG models.
+    1. Retrieving all YANG models supported by a device or orchestrator using the NETCONF monitoring standard.
+    2. Parsing the YANG models (using ODL yangtools) and outputting a tree with all the nodes, which the user can expand / collapse.
+    3. Filtering the model tree by module name and searching the names and descriptions of the YANG nodes in it (e.g. “neighbor count” or “bgp” “neighbor count”).
+    4. Downloading a ZIP-Archive of all YANG-models supported by the device or orchestrator.
+    5. Showing details and generating metadata for a YANG node, e.g. the description, the (sensor-)path, a subtree-filter (for NETCONF development) etc.
+    6. GNMI and IOS XR Telemetry support tools to edit sensor groups and show live data using GRPC.
+    7. Browsing and searching live (operational) data for selected YANG models.
     
 Download [ANX](https://github.com/cisco-ie/anx) code. 
 Note: This tool is meant to explore yang models on a lab device. DO NOT run this tool against a production devices!
 
 ### 4. Telemetry Data Mapper 
 
-
-    Telemetry Data Mapper to map data identifiers from SNMP, gRPC, NETCONF, CLI, etc. to each other.
+Telemetry Data Mapper to map data identifiers from SNMP, gRPC, NETCONF, CLI, etc. to each other.
 
 [TDM](https://github.com/cisco-ie/tdm) provides an offline, immutable view into advertised data availability from data models, with search affordance to quickly identify data of interest and the capability to map between data to aid in keeping track of what is roughly equivalent to what.
 
