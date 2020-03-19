@@ -54,14 +54,22 @@ Telemetry Data Mapper to map data identifiers from SNMP, gRPC, NETCONF, CLI, etc
 
 This is a manual process. The first step is to understand which “show output” you want to stream using Model Driven Telemetry. Let’s say we want to find the right path for RSVP interface output:  
 ```console
-  RP/0/RP0/CPU0:NCS5501_bottom#sh rsvp interface bundle-ether 26   
+RP/0/RP0/CPU0:NCS5501_bottom#sh rsvp interface bundle-ether 26   
 Thu Dec  7 18:27:56.646 PST
-
+
 *: RDM: Default I/F B/W % : 80% [cfgd] (max resv/bc0), 0% [default] (bc1)
-
+
 Interface                 MaxBW (bps)  MaxFlow (bps) Allocated (bps)      MaxSub (bps) 
 ------------------------- ------------ ------------- -------------------- -------------
 Bundle-Ether26                   240G           240G           20M (  0%)            0 
+```
+
+After the “show output” was defined you need to find the corresponding XML schema inside the router, using “schema-describe” command:
+```console
+RP/0/RP0/CPU0:NCS5501_bottom#schema-describe sh rsvp interface bundle-ether 26
+Thu Dec  7 18:28:25.325 PST
+Action: get
+Path:   RootOper.RSVP.InterfaceBrief({'InterfaceName': 'Bundle-Ether26'})
 ```
 
 
