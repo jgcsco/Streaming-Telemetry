@@ -73,12 +73,12 @@ Path:   RootOper.RSVP.InterfaceBrief({'InterfaceName': 'Bundle-Ether26'})
 ```
 
 After you found the corresponding XML schema, go and check the content of it. To do this you need to run “m2mcon” and use “get”:
-
+![Screenshot](images/show.png)
 
 At this step you have your show output, the schema you need and the fields of this schema. You need to find corresponding YANG model. Do this search based on the name (usually, it is clear which model you need), for RSVP you have just a single model: “Cisco-IOS-XR-ip-rsvp-oper.yang”
 
 Use pyang tool to go through the model, try to find the path (section) that contains the same fields. In our case it will be:  
-
+![Screenshot](images/yang.png)
 
 
 We can also use the following command to retrieve live data on a device under test for validation:
@@ -93,7 +93,7 @@ Sub_id 200000001, flag 4, len 95685
 {"node_id_str":"CS1","subscription_id_str":"app_TEST_200000001","encoding_path":"Cisco-IOS-XR-pfi-im-cmd-oper:interfaces/interface-xr/interface","collection_id":96186,"collection_start_time":1540318941158,"msg_timestamp":1540318950436,"data_json":…<snip>…
 ```
 All the counters on the screen are in JSON format. To see in a more human-readable format, use any preferred JSON formatter, e.g:
-
+![Screenshot](images/json.png)
 
 
 
