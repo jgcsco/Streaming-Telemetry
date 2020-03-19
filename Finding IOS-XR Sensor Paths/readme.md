@@ -50,6 +50,20 @@ Telemetry Data Mapper to map data identifiers from SNMP, gRPC, NETCONF, CLI, etc
 
 [TDM](https://github.com/cisco-ie/tdm) provides an offline, immutable view into advertised data availability from data models, with search affordance to quickly identify data of interest and the capability to map between data to aid in keeping track of what is roughly equivalent to what.
 
+### 5. CLI
+
+This is a manual process. The first step is to understand which “show output” you want to stream using Model Driven Telemetry. Let’s say we want to find the right path for RSVP interface output:  
+```console
+  RP/0/RP0/CPU0:NCS5501_bottom#sh rsvp interface bundle-ether 26   
+Thu Dec  7 18:27:56.646 PST
+
+*: RDM: Default I/F B/W % : 80% [cfgd] (max resv/bc0), 0% [default] (bc1)
+
+Interface                 MaxBW (bps)  MaxFlow (bps) Allocated (bps)      MaxSub (bps) 
+------------------------- ------------ ------------- -------------------- -------------
+Bundle-Ether26                   240G           240G           20M (  0%)            0 
+```
+
 
 
 
