@@ -38,8 +38,12 @@ This is a graphical explorer for YANG models supported by a NETCONF device or se
     - Download a ZIP-Archive of all YANG-models supported by the device.
     - Browsing and searching live (operational) data for selected YANG models.
 
+![Screenshot](../images/anx1.gif)
+![Screenshot](../images/anx2.gif)
+![Screenshot](../images/anx3.gif)
+![Screenshot](../images/anx4.gif)
     
-Download [ANX](https://github.com/cisco-ie/anx) code. 
+Download [Advanced NETCONF Explorer - ANX](https://github.com/cisco-ie/anx) code. 
 Note: This tool is meant to explore yang models on a lab device. DO NOT run this tool against a production devices!
 
 ### 4. Telemetry Data Mapper 
