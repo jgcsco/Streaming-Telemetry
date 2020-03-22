@@ -52,6 +52,10 @@ Note: This tool is meant to explore yang models on a lab device. DO NOT run this
 
 TDM provides an offline, immutable view into advertised data availability from data models, with search affordance to quickly identify data of interest and the capability to map between data to aid in keeping track of what is roughly equivalent to what.
 
+You will be able to access [TDM](https://tdm.cisco.com/)
+
+![](../images/tdm.png)
+
 ### 5. CLI
 
 This is a manual process and SHOULD NOT run on production devices. The first step is to understand which “show output” you want to stream using Model Driven Telemetry. Let’s say we want to find the right path for RSVP interface output:  
