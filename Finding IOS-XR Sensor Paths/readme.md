@@ -48,9 +48,9 @@ Note: This tool is meant to explore yang models on a lab device. DO NOT run this
 
 ### 4. Telemetry Data Mapper 
 
-Telemetry Data Mapper to map data identifiers from SNMP, gRPC, NETCONF, CLI, etc. to each other.
+[Telemetry Data Mapper - TDM](https://github.com/cisco-ie/tdm) to map data identifiers from SNMP, gRPC, NETCONF, CLI, etc. to each other.
 
-[TDM](https://github.com/cisco-ie/tdm) provides an offline, immutable view into advertised data availability from data models, with search affordance to quickly identify data of interest and the capability to map between data to aid in keeping track of what is roughly equivalent to what.
+TDM provides an offline, immutable view into advertised data availability from data models, with search affordance to quickly identify data of interest and the capability to map between data to aid in keeping track of what is roughly equivalent to what.
 
 ### 5. CLI
 
