@@ -32,13 +32,16 @@ module: Cisco-IOS-XR-infra-statsd-oper
 ### 3. Advanced NETCONF Explorer 
 This is a graphical explorer for YANG models supported by a NETCONF device or service orchestrator. Features include:
 
-    - Retrieve all YANG models supported by a device.
-    - Parse the YANG models and outputting a tree with all the nodes which can expand / collapse.
-    - Filter the model tree by module name and searching the names and descriptions of the YANG nodes in it.
-    - Download a ZIP-Archive of all YANG-models supported by the device.
-    - Browsing and searching live (operational) data for selected YANG models.
-
-![Screenshot](../images/anx1.gif)![Screenshot](../images/anx2.gif)![Screenshot](../images/anx3.gif)![Screenshot](../images/anx4.gif)
+ Retrieve all YANG models supported by a device.
+ Parse the YANG models and outputting a tree with all the nodes which can expand / collapse.
+ ![Screenshot](../images/anx1.gif)
+    
+ Filter the model tree by module name and searching the names and descriptions of the YANG nodes in it.
+ ![Screenshot](../images/anx2.gif)
+ ![Screenshot](../images/anx3.gif)
+    
+ Browsing and searching live (operational) data for selected YANG models.
+ ![Screenshot](../images/anx4.gif)
     
 Download [Advanced NETCONF Explorer - ANX](https://github.com/cisco-ie/anx) code. 
 Note: This tool is meant to explore yang models on a lab device. DO NOT run this tool against a production devices!
