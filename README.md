@@ -20,6 +20,7 @@
 
     Note: Although the encoding used in the example config here is GPB, it is actually refer to GPBKV or self-describe GPB as in IOS-XR. Users need to make sure to select matching encoding on the collector side. 
 
+### Visit [finding sensor-path page](https://github.com/jgcsco/Streaming-Telemetry/tree/master/Finding%20IOS-XR%20Sensor%20Paths) to find out tools to help identify the sensor path to use.
 
 ### The following link has some very good write up about streaming telemetry. Happy Reading!
 https://xrdocs.io/telemetry/
