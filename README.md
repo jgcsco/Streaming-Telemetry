@@ -76,7 +76,7 @@ TDM provides an offline, immutable view into advertised data availability from d
 
 You will be able to access [TDM](https://tdm.cisco.com/)
 
-![](../images/tdm.png)
+![](images/tdm.png)
 
 ### 5. CLI
 
