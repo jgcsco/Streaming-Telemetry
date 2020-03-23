@@ -19,3 +19,7 @@
 ![](images/nx-os2.png)
 
     Note: Although the encoding used in the example config here is GPB, it is actually refer to GPBKV or self-describe GPB as in IOS-XR. Users need to make sure to select matching encoding on the collector side. 
+
+
+### The following link has some very good write up about streaming telemetry. Happy Reading!
+https://xrdocs.io/telemetry/
